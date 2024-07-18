@@ -3,7 +3,9 @@ function firstWord(s) {
 	if(s === '') return s;
 
 	let ind = s.indexOf(' ');
-	if(ind === -1) return s;
+	if(ind === -1) {
+		return s;
+	}
 
 	return s.slice(0, ind);
 
