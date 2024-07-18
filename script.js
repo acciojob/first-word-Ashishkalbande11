@@ -1,13 +1,13 @@
 function firstWord(s) {
   // your code here
-	let ind;
-    for (let ch in s) {
-        if (s[ch] === " ") {
-            ind = ch;
-            break;
-        }
-    }
-    return s.substring(0, ind);
+	if(s === '') return s;
+
+	let ind = s.indexOf(' ');
+	if(ind === -1) return s;
+
+	return s.slice(0, ind);
+
+	
 }
 
 // Do not change the code below
